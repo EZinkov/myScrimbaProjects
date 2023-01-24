@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), 
+    url('images/background.png');
+    background-size: cover;
+    height: 350px;
+    padding: 0px 100px;
+    border-radius: 5px;
+}
+
+.header-container
+ h1,
+ a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.header-container
+ h1:hover,
+ a:hover {
+    text-decoration: underline;
+ }
+
+.search-icon {
+    position: relative;
+    left: 25px;
+    bottom: 10px;
+    z-index: 2;
+
+ }
+
+.search-container {
+    display: flex;
+    justify-content: center;
+}
+
+.input-value,
+.btn {
+    padding: 10px;
+    position: relative;
+    bottom: 20px;
+    text-decoration: none;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    outline: none;
+}
+
+.input-value {
+    width: 400px;
+    padding-left: 30px;
+}
+
+
+.btn {
+    margin-left: -5px;
+    padding: 0px 40px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.movie{
+    width: 100%;
+    height: auto;
+    margin: 22px 0;
+    /* This gap can be increased as well */
+    gap: 21px;
+    align-items: center;
+    border-bottom: 1.5px solid #E5E7EB;
+    box-shadow: 0 0 8px 0.2px grey;
+    transition: all 0.5s ease-in;
+}
+
+.movie:hover{
+    transform: scale(1.02);
+}
+
+.movie-poster{
+    /* height: 148px; */
+    width: 21.6%;
+    height: 100%;
+    align-self: stretch;
+}
+
+
+.movie-info{
+    padding: 15px;
+    width: calc(100% - 120px);
+    flex-direction: column;
+}
+
+
+.movie-info > header{
+    gap: 8px;
+    margin-bottom: 10px;
+    align-items: flex-start;
+}
+
+.movie-not-found {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.fa-star{
+    height: 15px;
+    width: 15px;
+    color: #FEC654;
+}
+
+
+.highlights{
+    gap: 20px;
+}
+
+.highlights button{
+    color: black;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.fa-circle-plus{
+    height: 17px;
+    width: 17px;
+}
+
+.summary{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #6B7280;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.watchlist-button,
+.remove {
+    text-decoration: none;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.watchlist-wrapper a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.movie-list {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
