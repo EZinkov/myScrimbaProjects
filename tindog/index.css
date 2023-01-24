@@ -1,0 +1,154 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* FONTS */
+
+.dog-info {
+    font-size: 2.5rem;
+}
+
+.game-over {
+    font-size: 4rem;
+}
+
+
+/* NAV */ 
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 1em;
+}
+
+/* MAIN */
+
+.card .dog-img {
+    width: 100%;
+}
+
+.card {
+    position: relative;
+    width: 100%;
+}
+
+.dog-info {
+    position: absolute;
+    color: white;
+    bottom: 20px;
+    left: 10px;
+    margin: 0em 0em 1.5em .8em;
+}
+
+/* BUTTONS */
+
+.actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    width: 100px;
+    height: 100px;
+}
+
+.reject-button,
+.accept-button {
+    border: none;
+    border-radius: 50%;
+    padding: 1.75em;
+    background-color: white;
+    margin: 2.5em 0em 0em 5em;
+    box-shadow: 0 5px 15px rgb(0,0,0, 0.4);
+    cursor: pointer;
+    
+}
+
+.accept-button:hover{
+    background-color:rgba(53, 228, 182, 0.14);
+}
+
+.reject-button:hover {
+    background-color: rgba(235, 75, 100, 0.14);
+}
+
+/* BADGES */
+
+.badge-dislike,
+.badge-like {
+    width: 450px;
+    height: 300px;
+    position: absolute;
+    top: 120px;
+    left: 80px;
+    transform: rotate(-30deg);
+
+}
+
+.hidden {
+    display: none;
+}
+
+/* GAMEOVER */
+
+.game-over {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: rgb(2,0,36);
+    background: linear-gradient(140deg, rgba(2,0,36,1) 0%, rgba(121,9,53,1) 35%, rgba(0,212,255,1) 100%);
+    height: 1382px;
+}
+
+
+/* MEDIA */
+
+@media (min-width: 1024px) {
+    body {
+        width: 1024px;
+    }
+
+    .card {
+        width: 400px;
+        margin: 0 auto;
+    }
+    .dog-info {
+        font-size: 1em;
+    }
+    
+    .dog-img {
+        border-radius: 5px;
+    }
+
+    .game-over {
+        width: 400px;
+        height: 550px;
+        font-size: 1.5em;
+    }
+
+    .badge-dislike,
+    .badge-like {
+        width: 200px;
+        height: 100px;
+        position: absolute;
+        top: 50px;
+        left: 20px;
+    }
+
+    .icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .reject-button {
+        margin-left: 0;
+    }
+    .accept-button {
+        margin-left: 30px;
+    }
+}
